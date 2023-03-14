@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Higala App Portal</title>
+  <style>
+    {
+      margin: 0;
+      padding: 0;  
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    .container form {
+    position: relative;
+    margin-top: 20px;
+    }
+
+    .header{
+       background-color: lightblue;
+       padding:  20px 0;
+    }
+    .form-group {
+      display: flex;
+      margin-bottom: 20px;
+  }
+    label {
+      font-weight: bold;
+    }
+
+    .error-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+    }
+
+     .form-control {
+      width: 40%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <center><h1>Higala App Portal - Individual</h1></center>
+    </div>
+
+  <form>
+    <table style="width: 100%">
+    <tr><td><div class="form-group">
+      <label for="username">User Name:</label>
+      <input type="text" id="username" name="username" class="form-control" />
+      <span class="error-message" id="username-error"></span>
+    </div></td>
+
+    <td><div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="form-control" />
+      <span class="error-message" id="password-error"></span>
+    </div></td>
+    
+    <td><div class="form-group">
+        <label for="confirm">confirm:</label>
+        <input type="password" id="confirm" name="confirm" class="form-control" />
+        <span class="error-message" id="confirm-error"></span>
+    </div></td></tr>
+    
+    <tr><td><div class="form-group">
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" class="form-control" />
+      <span class="error-message" id="firstname-error"></span>
+      <select name="nameExtension" class="form-control">
+        <option selected="selected"value=""></option>
+        <option>JR</option>
+        <option>SR</option>
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IV</option>
+        <option>V</option>
+        <option>VI</option>
+        <option>VII</option>
+        <option>VIII</option>
+        <option>IX</option>
+        <option>X</option>
+      </select></div></td>
+
+      <td><div class="form-group">
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename" class="form-control" />
+        <span class="error-message" id="middlename-error"></span>
+      </div></td>
+
+      <td><div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" class="form-control" />
+        <span class="error-message" id="lastname-error"></span>
+      </div></td></tr>
+
+      <tr><td><div class="form-group">
+        <label for="sex">Sex</label>
+        <select name="sex" class="form-control">
+          <option selected="selected" value=""></option>
+            <option>Male</option>
+            <option>Female</option>
+        </select></div></td>
+
+      <td><div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input type="date" class="form-control">
+      </div></td>
+
+      <td><div class="form-group">
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" class="form-control" />
+        <span class="error-message" id="nationality-error"></span>
+      </div></td>
+  
+      <td><div class="form-group">
+        <label for="phonenumber">Mobile No.:</label>
+        <input type="number" id="phonenumber" name="phonenumber" placeholder="09XXXXXXX" class="form-control" />
+        <span class="error-message" id="phonenumber-error"></span>
+      </div></td>
+  
+      <td><div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" />
+        <span class="error-message" id="email-error"></span>
+      </div></td></tr>
+  
+      <tr><td><div class="form-group">
+        <label for="address">Address : Street</label>
+        <input type="text" id="address" name="address" class="form-control" required />
+        <span class="error-message" id="address-error"></span>
+      </div></td></tr>
+   
+      <tr><td><div class="form-group">
+         <label for="province">Province</label>
+          <select name="province" class="form-control">
+              <option selected="selected" value=""></option>
+              <option>ABRA</option>
+              <option>AGUSAN DEL NORTE</option>
+              <option>AGUSAN DEL SUR</option>
+              <option>AKLAN</option>
+              <option>AKLAN</option>
+              <option>ALBAY</option>
+              <option>ANTIQUE</option>
+              <option>APAYAO</option>
+              <option>AURORA</option>
+              <option>BASILAN</option>
+              <option>BATAAN</option>
+              <option>BATANES</option>
+              <option>BATANGAS</option>
+              <option>BENGUET</option>
+              <option>BILIRAN</option>
+              <option>BOHOL</option>
+              <option>BUKIDNON</option>
+              <option>BULACAN</option>
+              <option>CAGAYAN</option>
+              <option>CAMARINES NORTE</option>
+              <option>CEBU</option>
+              <option>CITY OF ISABELA</option>
+              <option>CITY OF MANILA</option>
+              <option>COMPOSTELA VALLEY</option>
+              <option>ISABELA</option>
+              <option>KALINGA</option>
+              <option>LA UNION</option>
+              <option>LAGUNA</option>
+              <option>LANAO DEL NORTE</option>
+              <option>LANAO DEL SUR</option>
+              <option>MISAMIS OCCIDENTAL</option>
+              <option>MISAMIS ORIENTAL</option>
+           </select></div></td>
+  
+    <td><div class="form-group">
+      <label for="city">City/Municipality</label>
+          <select name="city" class="form-control">>
+              <option selected="selected" value=""></option>
+              <option>ALUBIJID</option>
+              <option>BALINGASAG</option>
+              <option>BALINGOAN</option>
+              <option>BINUANGAN</option>
+              <option>CAGAYAN DE ORO CITY</option>
+              <option>CLAVERIA</option>
+              <option>EL SALVADOR CITY</option>
+              <option>GINGOOG CITY</option>
+              <option>GITAGUM</option>
+              <option>INITAO</option>
+              <option>JASAAN</option>
+              <option>LAGONGLONG</option>
+              <option>LAGUINDINGAN</option>
+              <option>LIBERTAD</option>
+              <option>LUGAIT</option>
+              <option>MEDINA</option>
+              <option>NAAWAN</option>
+              <option>OPOL</option>
+              <option>SALAY</option>
+              <option>SUGBONGCOGON</option>
+              <option>TAGOLOAN</option>
+              <option>TALISAYAN</option>
+              <option>VILLANUEVA</option>
+        </select></div></td>
+  
+    <td><div class="form-group">
+      <label for="barangay">Barangay</label>
+          <select name="barangay" class="form-control">>
+              <option selected="selected" value=""></option>
+              <option>AGUSAN</option>
+              <option>BAIKINGON</option>
+              <option>BALUBAL</option>
+              <option>BALULANG</option>
+              <option>BULUA</option>
+              <option>CAMAMAN-AN</option>
+              <option>CANITO-AN</option>
+              <option>CARMEN</option>
+              <option>CONSOLACION</option>
+              <option>CUGMAN</option>
+              <option>DANSOLIHON</option>
+              <option>F. S. CATANICO</option>
+              <option>GUSA</option>
+              <option>INDAHAG</option>
+              <option>IPONAN</option>
+              <option>KAUSWAGAN</option>
+              <option>LAPASAN</option>
+              <option>LUMBIA</option>
+              <option>MACABALAN</option>
+              <option>MAMBUAYA</option>
+              <option>NAZARETH</option>
+              <option>PAGALUNGAN</option>
+              <option>PAGATPAT</option>
+              <option>PIGSAG-AN</option>
+              <option>PUERTO</option>
+              <option>PUNTOD</option>
+              <option>SAN SIMON</option>
+              <option>TABLON</option>
+          </select></div></td>
+        </table>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+    const firstnameInput = document.getElementById("firstname");
+    const middlenameInput = document.getElementById("middlename");
+    const lastnameInput = document.getElementById("lastname");
+    const sexInput = document.getElementById("sex");
+    const birthdateInput = document.getElementById("birthdate");
+    const nationalityInput = document.getElementById("nationality");
+    const phonenumberInput = document.getElementById("phonenumber");
+    const emailInput = document.getElementById("email")
+    const addressInput = document.getElementById("address");
+    const provinceInput = document.getElementById("province");
+    const cityInput = document.getElementById("city");
+    const barangayInput = document.getElementById("barangay");
+    const usernameError = document.getElementById("username-error");
+    const passwordError = document.getElementById("password-error");
+    const firstnameError = document.getElementById("firstname-error");
+    const middlenameError = document.getElementById("middlename-error");
+    const lastnameError = document.getElementById("lastname-error");
+    const sexError = document.getElementById("sex-error");
+    const birthdateError = document.getElementById("birthdate-error");
+    const nationalityError = document.getElementById("nationality-error");
+    const phonenumberError = document.getElementById("phonenumber-error");
+    const emailError = document.getElementById("email-error")
+    const addressError = document.getElementById("address-error");
+    const provinceError = document.getElementById("province-error");
+    const cityError = document.getElementById("city-error");
+    const barangayError = document.getElementById("barangay-error");
+
+    usernameInput.addEventListener("input",function(){
+      if (usernameInput.value.length < 6){
+        usernameError.textContent = "User Name must be at least 6 characters";
+        usernameError.style.display = "block";
+      } else {
+        usernameError.style.display = "none";
+      }
+    });
+
+    passwordInput.addEventListener("input", function(){
+    if (passwordInput.value.length < 8) {
+      passwordError.textContent = "Password minimum 8 characters 1 number and symbols";
+        passwordError.style.display = "block";
+       } else {
+        passwordError.style.display = "none";
+       }
+    });
+
+    firstnameInput.addEventListener("input", function(){
+      if (firstnameInput.value.length < 6){
+        firstnameError.textContent = "First Name must be at least 6 characters";
+        firstnameError.style.display = "block";
+      } else {
+        lastnameError.style.display = "none";
+      }
+    });
+
+    middlenameInput.addEventListener("input", function(){
+      if (middlenameInput.value.length < 6){
+        middlenameError.textContent = "Middle Name must be at least 6 characters";
+        middlenameError.style.display = "block";
+      } else {
+        middlenameError.style.display = "none";
+      }
+    });
+    
+    lastnameInput.addEventListener("input", function(){
+      if (lastnameInput.value.length < 6){
+        lastnameError.textContent = "Last Name must be at least 6 characters";
+        lastnameError.style.display = "block";
+      } else {
+        lastnameError.style.display = "none";
+      }
+    });
+
+    phonenumberInput.addEventListener("input", function(){
+    if (phonenumberInput.value.length < 11) {
+      phonenumberError.textContent = "Invalid Mobile Number";
+        phonenumberError.style.display = "block";
+       } else {
+        phonenumberError.style.display = "none";
+       }
+    });
+
+    emailInput.addEventListener("input", function(){
+    if (emailInput.value.length < 20) {
+      workemailError.textContent = "Invalid email address";
+        workemailError.style.display = "block";
+       } else {
+        workemailError.style.display = "none";
+        }
+    });
+  </script>
+
+</body>
+</html>
